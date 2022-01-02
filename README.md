@@ -1,6 +1,9 @@
 # Secret-Key-Encryption
-
 Secret-Key-Encryption
+|  Name   | Title |
+| ------------- | ------------- |
+| Aamir Nazir  | Secret-Key-Encryption  |
+
 Instruction: https://seedsecuritylabs.org/Labs_16.04/PDF/Crypto_Encryption.pdf
 # Task 1
 - Step 1: . First create file ```article.txt```.The usage of tr is available in GNU documentations. -d means 'delete' and -cd means 'delete the complement of', so first we just keep the letters, spaces, and newlines as the plaintext.
@@ -10,7 +13,7 @@ echo "This Is a Plain Text Which Is Converted into Cipher Text Using Subtitution
 tr [:upper:] [:lower:] < article.txt > lowercase.txt
 tr -cd ’[a-z][\n][:space:]’ < lowercase.txt > plaintext.txt
 ```
-![task1a](https://github.com/Asad-Ali-Code/Secret-Key-Encryption/blob/main/task1a.PNG)
+![task1a](https://github.com/Aamir-Nazir-Code/Secret-Key-Encryption/blob/main/task1a.PNG)
 - Step 2: Use Python console to generate a permutation of a-z:
 ```
 >>> import random
@@ -18,14 +21,14 @@ tr -cd ’[a-z][\n][:space:]’ < lowercase.txt > plaintext.txt
 >>> ''.join(random.sample(s,len(s)))
 'jyqsfotweaurdlxkzgcbpnvhmi'
 ```
-![task1b](https://github.com/Asad-Ali-Code/Secret-Key-Encryption/blob/main/task1b.PNG)
+![task1b](https://github.com/Aamir-Nazir-Code/Secret-Key-Encryption/blob/main/task1b.PNG)
 - Step 3: Encryption
 ```
 $tr "abcdefghijklmnopqrstuvwxyz" "jyqsfotweaurdlxkzgcbpnvhmi" < plaintext.txt > ciphertext.txt
 ```
 As the result of ```Encryption```.
 
-![task1c](https://github.com/Asad-Ali-Code/Secret-Key-Encryption/blob/main/task1c.PNG)
+![task1c](https://github.com/Aamir-Nazir-Code/Secret-Key-Encryption/blob/main/task1c.PNG)
 
 - Step 4: Decryption
 ```
