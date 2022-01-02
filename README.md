@@ -1,10 +1,6 @@
 # Secret-Key-Encryption
-@@ -1,37 +1,379 @@
-# Secret-Key-Encryption
+
 Secret-Key-Encryption
-|  Name   | Title |
-| ------------- | ------------- |
-| Asad Ali  | Secret-Key-Encryption  |
 Instruction: https://seedsecuritylabs.org/Labs_16.04/PDF/Crypto_Encryption.pdf
 # Task 1
 - Step 1: . First create file ```article.txt```.The usage of tr is available in GNU documentations. -d means 'delete' and -cd means 'delete the complement of', so first we just keep the letters, spaces, and newlines as the plaintext.
